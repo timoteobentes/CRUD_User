@@ -17,7 +17,7 @@
 <body>
     <header>
         <img src="./components/imgs/BENTECH_LOGO.png" class="logo" alt="Logo">
-        SISTEMA CRUD
+        <span>SISTEMA CRUD</span>
     </header>
 
     <a class="btnCad" href="./view/pages/inserir.php">

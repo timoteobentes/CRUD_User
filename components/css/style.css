@@ -26,7 +26,7 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     bottom: 1em;
     right: 1em;
     border-radius: .2em;
@@ -142,4 +142,21 @@ form {
 
 #nome {
     width: 50em;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+    header span {
+        display: none;
+    }
+
+    .tab {
+        margin-left: 10em;
+    }
+
+    #nome {
+        width: 20em;
+    }
 }

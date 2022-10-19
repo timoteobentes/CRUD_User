@@ -15,7 +15,7 @@
 <body>
     <header>
         <img src="../../components/imgs/BENTECH_LOGO.png" class="logo" alt="Logo">
-        SISTEMA CRUD
+        <span>SISTEMA CRUD</span>
     </header>
 
     <h1>CADATRO DE USUÁRIO</h1>

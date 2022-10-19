@@ -40,7 +40,7 @@
 
         public function pesquisaUser($id)
         {
-            $result = $this -> conn -> query("SELECT * FROM usuario WHERE nome '" . $id . "';");
+            $result = $this -> conn -> query("SELECT * FROM usuario WHERE nome ='" . $id . "';");
             return $result -> fetch_array(MYSQLI_ASSOC);
         }
 

@@ -1,6 +1,6 @@
 <?php
 
-    require("../model/usuarioDAO.php");
+    require("/xampp/htdocs/MVC_SITEMA/model/usuarioDAO.php");
 
     class EditarUser
     {

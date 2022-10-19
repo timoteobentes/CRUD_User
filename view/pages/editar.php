@@ -1,3 +1,5 @@
+<?php require_once("../../controller/editar.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,10 +17,8 @@
 <body>
     <header>
         <img src="../../components/imgs/BENTECH_LOGO.png" class="logo" alt="Logo">
-        SISTEMA CRUD
+        <span>SISTEMA CRUD</span>
     </header>
-
-    <?php require_once("../../controller/editar.php"); ?>
 
     <h1>EDITAR USUÁRIO</h1>
 
@@ -26,20 +26,18 @@
         <form action="../../controller/editar.php" method="post">
             <div class="mb-3">
                 <label class="form-label" for="nome">Nome</label>
-                <input class="form-control" value="<?php echo $editar -> getNome() ?>" type="text" name="nome" id="nome">
+                <input class="form-control" value="<?php echo $editar -> getNome(); ?>" type="text" name="nome" id="nome">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="email">Email</label>
-                <input class="form-control" value="<?php echo $editar -> getEmail() ?>" type="text" name="email" id="email">
+                <input class="form-control" value="<?php echo $editar -> getEmail(); ?>" type="text" name="email" id="email">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="cpf">CPF</label>
-                <input class="form-control" value="<?php echo $editar -> getCpf() ?>" type="text" name="cpf" id="cpf">
+                <input class="form-control" value="<?php echo $editar -> getCpf(); ?>" type="text" name="cpf" id="cpf">
             </div>
-            <div class="mb-3">
-                <input class="form-control" value="<?php echo $editar -> getNome() ?>" type="hidden" name="id" id="id">
-            </div>
-            <button class="btn btn-primary mb-3" type="submit">Cadastrar</button>
+            <input class="form-control" value="<?php echo $editar -> getNome(); ?>" type="hidden" name="nome" id="nome">
+            <button class="btn btn-primary mb-3" type="submit" name="submit">Cadastrar</button>
             <a href="../../index.php" class="btn btn-danger mb-3">Voltar</a>
         </form>
     </main>
@@ -47,7 +45,6 @@
     <footer>
         &copy;Desenvolvido por Timóteo Bentes 
     </footer>
-
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
