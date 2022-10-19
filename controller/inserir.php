@@ -1,6 +1,6 @@
 <?php
 
-require("../model/usuarioDAO.php");
+    require("../model/usuarioDAO.php");
 
     class InsertUser
     {

@@ -1,10 +1,145 @@
+body {
+    background: linear-gradient(to right, #060061, #000);
+    background-size: 400% 400%;
+    animation: back 15s ease infinite;
+}
+
+@keyframes back {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btnCad {
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    display: flex;
+    width: 2em;
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    border-radius: .2em;
+    transition: 1s;
+    padding: .5em;
+}
+
+.btnCad span {
+    display: none;
+}
+
+.btnCad:hover span {
+    display: flex;
+}
+
+.btnCad:hover {
+    width: 7em;
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 1em 0 1em 0;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: sans-serif;
 }
 
 .logo {
     width: 200px;
+}
 
+main {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab {
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    border-radius: 1.5em;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .5);
+    background: #fff;
+    font-size: 1.5em;
+}
+
+.tab tbody tr:last-child {
+    border-bottom: none !important;
+}
+
+.tab thead th:last-child {
+    text-align: center;
+}
+
+.tab tbody td:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.tab tbody td:last-child a {
+    background: #f00;
+    color: #fff;
+    border-radius: .5em;
+    width: 2em;
+    transition: .5s;
+}
+
+.tab tbody td:last-child a:hover {
+    background: #9c0000;
+}
+
+.tab tbody td:last-child a:first-child {
+    background: #ffd900;
+    color: #fff;
+    border-radius: .5em;
+    width: 2em;
+    transition: .5s;
+}
+
+.tab tbody td:last-child a:first-child:hover {
+    background: #ad9300;
+}
+
+footer {
+    color: #fff;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+/* Inserir */
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 2em;
+}
+
+label {
+    color: #fff;
+}
+
+form {
+    margin-top: 5em;
+}
+
+#nome {
+    width: 50em;
 }

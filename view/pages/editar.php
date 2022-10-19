@@ -4,43 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="../../components/imgs/LOGO.png">
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../../components/css/style.css">
 
-    <title>Sistema - Cadastro</title>
+    <title>Sistema - Editar</title>
 </head>
 <body>
     <header>
-        <img src="../../components/imgs/BENTECH_LOGO .png" class="logo" alt="Logo">
-        <div class="user">
-            <span>Usuário</span>
-            <ion-icon name="power"></ion-icon>
-        </div>
+        <img src="../../components/imgs/BENTECH_LOGO.png" class="logo" alt="Logo">
+        SISTEMA CRUD
     </header>
 
+    <?php require_once("../../controller/editar.php"); ?>
+
+    <h1>EDITAR USUÁRIO</h1>
+
     <main>
-        <form action="../../controller/inserir.php" method="post">
+        <form action="../../controller/editar.php" method="post">
             <div class="mb-3">
                 <label class="form-label" for="nome">Nome</label>
-                <input class="form-control" type="text" name="nome" id="nome">
+                <input class="form-control" value="<?php echo $editar -> getNome() ?>" type="text" name="nome" id="nome">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="email">Email</label>
-                <input class="form-control" type="text" name="email" id="email">
+                <input class="form-control" value="<?php echo $editar -> getEmail() ?>" type="text" name="email" id="email">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="cpf">CPF</label>
-                <input class="form-control" type="text" name="cpf" id="cpf">
+                <input class="form-control" value="<?php echo $editar -> getCpf() ?>" type="text" name="cpf" id="cpf">
             </div>
             <div class="mb-3">
-                <label class="form-label" for="telefone">Telefone</label>
-                <input class="form-control" type="text" name="telefone" id="telefone">
+                <input class="form-control" value="<?php echo $editar -> getNome() ?>" type="hidden" name="id" id="id">
             </div>
             <button class="btn btn-primary mb-3" type="submit">Cadastrar</button>
+            <a href="../../index.php" class="btn btn-danger mb-3">Voltar</a>
         </form>
     </main>
+
+    <footer>
+        &copy;Desenvolvido por Timóteo Bentes 
+    </footer>
+
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

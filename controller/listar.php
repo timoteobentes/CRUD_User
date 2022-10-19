@@ -18,9 +18,10 @@
             foreach($row as $value) {
                 echo "<tr>";
                 //echo "<th>" . $value['id'] . "</th>";
-                echo "<th>" . $value['nome'] . "</th>";
-                echo "<th>" . $value['email'] . "</th>";
-                echo "<th>" . $value['cpf'] . "</th>";
+                echo "<td>" . $value['nome'] . "</td>";
+                echo "<td>" . $value['email'] . "</td>";
+                echo "<td>" . $value['cpf'] . "</td>";
+                echo "<td><a href='./view/pages/editar.php?id=" . $value['nome'] ."'><ion-icon name='pencil'></ion-icon></a><a href='./controller/deletar.php?id=" . $value['nome'] ."'><ion-icon name='trash'></ion-icon></a></td>";
                 echo "</tr>";
             }
         }
