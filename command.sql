@@ -1,0 +1,10 @@
+CREATE DATABASE sistema;
+
+USE sistema;
+
+CREATE TABLE user (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    cpf VARCHAR(11)
+);
